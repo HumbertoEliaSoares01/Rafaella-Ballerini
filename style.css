@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #331F19; /* Fundo neutro */
+    background-color: #8B7D70; /* Fundo neutro */
 }
 .container {
     text-align: center;
@@ -18,7 +18,7 @@ body {
     border: 2px solid #8B7D70;
 }
 h1 {
-    color: #331F19;
+    color: #ffffff;
 }
 p {
     color: #331F19;
@@ -26,11 +26,13 @@ p {
 }
 .saudacao{
     font-size: 1,5em;
+/*
     color: #60041A;
-    margin-top: 10px;
+*/
+    color: rgb(245, 239, 220);    margin-top: 10px;
 }
 button {
-    background-color: #60041A;
+    background-color: #4a6004;
     color: #F4F0EA;
     padding: 10px 20px;
     border: none;
@@ -43,3 +45,9 @@ button {
 button:hover {
     background-color: #A34743;
 }
+/*
+div {
+    color: rgb(222, 205, 135);
+    font-size: 1,5%;
+}
+*/
