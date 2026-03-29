@@ -11,13 +11,14 @@
   <div class="container">​​
     <h1> Boas vindas! </h1>
     <p> Vamos personalizar sua saudação usando JavaScript! </p>
-    <div class="saudacao" id="mensagemSaudacao"> Olá , visitante! 
+    <div class="saudacao" id="mensagemSaudacao"> Olá, visitante! 
     </div>​​
       <button onclick="mudarNome()">Personalizar Saudação</button>
   </div>​​
   <script>
     function mudarNome(){
-      document.getElementById("mensagemSaudacao").textContent = "Olá Betinho"
+      let nome = "Betinho"
+      document.getElementById("mensagemSaudacao").textContent = "Olá, " + nome+ "!"
     }
   </script>
 </body>​​
