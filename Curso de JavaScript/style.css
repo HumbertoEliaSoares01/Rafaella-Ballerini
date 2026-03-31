@@ -8,6 +8,7 @@ header h1{
 }
 ul{
     list-style: none;
+    display: flex;
 }
 li{
     text-align: center;
