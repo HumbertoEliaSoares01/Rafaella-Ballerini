@@ -8,17 +8,16 @@ header h1{
 }
 ul{
     list-style: none;
-    display: flex;
 }
 li{
     text-align: center;
 }
 iframe{
-    margin: 20px;
-}
+    margin: 20px;}
 .botao{
     color: #fff;
     padding: 50px;
+    height: 30px;
 }
 .botao{
     padding: 10px 20px;
