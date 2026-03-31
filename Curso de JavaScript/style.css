@@ -1,4 +1,21 @@
-header{
-    background-color: #EA9972;
-    text-align: center;    
+body{
+    background-color: #71116D;
+}
+header h1{
+    color: #EA9972;
+    text-align: center;
+    font-size: 2.5em;    
+}
+ul{
+    list-style: none;
+}
+li{
+    text-align: center;
+}
+iframe{
+    margin: 20px;
+}
+.botao{
+    color: #fff;
+    padding: 50px;
 }
