@@ -6,6 +6,14 @@ header h1{
     text-align: center;
     font-size: 2.5em;    
 }
+header p{
+    text-align: center;
+    color: #F4CD0B
+    font-size: 2em;
+}
+header{
+    border-bottom: 2px solid fff;
+}
 ul{
     list-style: none;
 }
