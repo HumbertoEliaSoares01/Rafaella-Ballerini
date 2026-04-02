@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
@@ -10,17 +10,15 @@
   <div class="container">
     <h1>Lista de Tarefas</h1>
     <p>Adicione suas tarefas!</p>
-    <input 
-      type="text" 
-      placeholder="Digite a sua tarefa" 
-      id="inputTarefa">
-    <button 
-      onclick="adicionarTarefa()">
-      Adicionar Tarefa
-    </button>
+    <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
     <p id="mensagem"></p>
   </div>
 
-  <script src="script.js"></script> <!-- linkando o arquivo JavaScript -->
+  <script>
+    function adicionarTarefa() {
+      let mensagem = "Tarefa adicionada com sucesso!";
+            document.getElementById("mensagem").textContent = mensagem;
+    }
+  </script>
 </body>
 </html>
