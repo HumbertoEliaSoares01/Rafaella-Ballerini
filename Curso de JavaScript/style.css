@@ -11,6 +11,11 @@ header p{
     color: #F4CD0B;
     font-size: 2em;
 }
+hr{
+    width: 75%;
+    border-color: #B888B6;
+    margin-top: 100px;
+}
 ul{
     list-style: none;
 }
