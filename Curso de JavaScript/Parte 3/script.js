@@ -1,22 +1,20 @@
 // funcção adicionarTarefa acionada pelo evento clique no botão
 function adicionarTarefa() {
-    // variável mensagem recebe a string "Tarefa adicionada com sucesso!" 
-    let mensagem = "Tarefa adicionada com sucesso!";    
 
-    // variável inputTarefa recebe o que foi digitado no input do HTML
+    // recebe valor do input do usuário 
     let inputTarefa = document.getElementById("inputTarefa");
-    // variável tarefa recebe o valor da string digitda no input
     let tarefa = inputTarefa.value;
-    // escreve no elemento id= mensagem a string "tarefa adicionada ..."
-    document.getElementById("mensagem").textContent = mensagem;
 
-    // variável listaTarefas recebe a ul do html de id = "listaTarefas"
+    // cria novo item (li) e insere da lista (ul)
     let listaTarefas = document.getElementById("listaTarefas");
-    // variável novaTarefa recebe elemento "li"
     let novaTarefa = document.createElement("li");
-    
     novaTarefa.textContent = tarefa;
     listaTarefas.appendChild(novaTarefa);
 
+    // mensagem de tarefa adicionada com sucesso
+    let mensagem = "Tarefa adicionada com sucesso!";    
+    document.getElementById("mensagem").textContent = mensagem;
+
+    // limpa o input do usuário    
     inputTarefa.value = "";
 }
