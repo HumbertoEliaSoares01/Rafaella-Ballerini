@@ -12,9 +12,18 @@ function adicionarTarefa() {
     listaTarefas.appendChild(novaTarefa);
 
     // mensagem de tarefa adicionada com sucesso
-    let mensagem = "Tarefa adicionada com sucesso!";    
-    document.getElementById("mensagem").textContent = mensagem;
+    let mensagemSucesso = "Tarefa adicionada com sucesso!";    
+    document.getElementById("mensagemSucesso").textContent = mensagemSucesso;
 
     // limpa o input do usuário    
     inputTarefa.value = "";
+
+    // Se o valor do input for vazio, então mostre uma mensagem de erro pro usuário
+    if (tarefa == ""){
+        // mostre uma mensagem de erro
+    let mensagemErro = "Digite uma tarefa para adicionar à lista.";    
+    document.getElementById("mensagemErro").textContent = mensagemErro;
+
+    }
+
 }
