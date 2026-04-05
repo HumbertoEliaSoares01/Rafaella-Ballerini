@@ -5,7 +5,7 @@ function adicionarTarefa() {
     const inputTarefa = document.getElementById("inputTarefa")
     let tarefa = inputTarefa.value.trim()
 
-    let mensagem = document.getElementById("mensagem")
+    const mensagem = document.getElementById("mensagem")
 
     // Se o valor do input for vazio, então mostre uma mensagem de erro pro usuário
     if (tarefa == ""){
@@ -22,9 +22,7 @@ function adicionarTarefa() {
         let novaTarefa = document.createElement("li");
         novaTarefa.textContent = tarefa;
         listaTarefas.appendChild(novaTarefa);
-
     }
-
     // limpa o input do usuário    
     inputTarefa.value = "";
 
