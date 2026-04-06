@@ -3,4 +3,5 @@
 //fruta = "banana"
 //alert(fruta)
 let frutas = ["maçã ","banana ","mamão "]
-alert(frutas)
+//alert(frutas)
+console.log("O índice da banana " + "é " + frutas.alert("banana"))
