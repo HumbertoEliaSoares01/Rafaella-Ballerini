@@ -1,3 +1,6 @@
+
+let tarefas = []
+
 // funcção adicionarTarefa acionada pelo evento clique no botão
 function adicionarTarefa() {
 
@@ -17,13 +20,29 @@ function adicionarTarefa() {
         // mensagem de tarefa adicionada com sucesso
         let mensagemSucesso = "Tarefa adicionada com sucesso!"
         mensagem.textContent = mensagemSucesso;
-        // cria novo item (li) e insere da lista (ul)
-        const listaTarefas = document.getElementById("listaTarefas");
-        let novaTarefa = document.createElement("li");
-        novaTarefa.textContent = tarefa;
-        listaTarefas.appendChild(novaTarefa);
+
+        tarefas.push(tarefa)
+        renderizarTarefas()
     }
     // limpa o input do usuário    
     inputTarefa.value = "";
+}
+
+function renderizarTarefas(){
+    // cria novo item (li) e insere da lista (ul)
+    const listaTarefas = document.getElementById("listaTarefas");
+
+    // for itens na lista
+    // 1. item inicial (iterador)
+    // 2. item final(condição)
+    // 3. se vai de 1 em 1 elemento, ou seja, pula
+    // for(iterador, condição, frequência)
+    let i = 0
+
+    for (i; i < tarefas.length; i++ ){
+        let novaTarefa = document.createElement("li");
+        novaTarefa.textContent = tarefas[i]; 
+        listaTarefas.appendChild(novaTarefa);    
+    }
 
 }
