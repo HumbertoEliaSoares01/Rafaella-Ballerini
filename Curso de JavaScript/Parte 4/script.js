@@ -31,7 +31,8 @@ function adicionarTarefa() {
 function renderizarTarefas(){
     // cria novo item (li) e insere da lista (ul)
     const listaTarefas = document.getElementById("listaTarefas");
-
+    listaTarefas.innerHTML = "";
+    
     // for itens na lista
     // 1. item inicial (iterador)
     // 2. item final(condição)
