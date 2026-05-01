@@ -27,5 +27,7 @@ function adicionarTarefa() {
 
     // limpa o input do usuário    
     inputTarefa.value = "";
-
+    
+        //#28A745 verde
+        //#A44744 vermelho 
 }
