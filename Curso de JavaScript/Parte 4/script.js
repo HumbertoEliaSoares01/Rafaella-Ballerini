@@ -36,9 +36,10 @@ function renderizarTarefas(){
     // for itens na lista
     // 1. item inicial (iterador)
     // 2. item final(condição)
-    // 3. se vai de 1 em 1 elemento, ou seja, pula
-    // for(iterador, condição, frequência)
-    let i = 0
+    // 3. se vai de 1 em 1 elemento, ou seja pula (frequência)
+    // for (iterador, condição, frequência)
+
+    let i = 0   // iterador
 
     for (i; i < tarefas.length; i++ ){
         let novaTarefa = document.createElement("li");
