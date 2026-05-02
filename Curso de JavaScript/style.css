@@ -36,10 +36,12 @@ iframe{
     border-radius: 5px;
     display: inline-block; float: left;
     margin: 10px;
+    opacity: .7;
 }
 .botao:hover{
     box-shadow: 0px 0px 40px #fff
-}.mdn{
+}
+.mdn{
     color: #fff;
     padding: 50px;
     height: 30px;
@@ -51,8 +53,26 @@ iframe{
     border-radius: 5px;
     display: inline-block; float: left;
     margin: 10px;
+    opacity: .7;
 }
 .mdn:hover{
+    box-shadow: 0px 0px 40px #fff
+}
+.w3c{
+    color: #fff;
+    padding: 50px;
+    height: 30px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #059862;
+    width: 200px;
+    border: 0.01px solid #fff;
+    border-radius: 5px;
+    display: inline-block; float: left;
+    margin: 10px;
+    opacity: .7;
+}
+.w3c:hover{
     box-shadow: 0px 0px 40px #fff
 }
 .item{
