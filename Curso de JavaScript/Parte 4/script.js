@@ -7,12 +7,11 @@ function adicionarTarefa() {
     // recebe valor do input do usuário 
     const inputTarefa = document.getElementById("inputTarefa")
     let tarefa = inputTarefa.value.trim()
-
     const mensagem = document.getElementById("mensagem")
 
-    // Se o valor do input for vazio, então mostre uma mensagem de erro pro usuário
+    // Se o valor do input for vazio, mostra uma mensagem de erro
     if (tarefa == ""){
-        // mostre uma mensagem de erro
+        // mensagem de erro
         let mensagemErro = "Digite uma tarefa para adicionar à lista."    
         mensagem.textContent = mensagemErro
     } 
@@ -24,6 +23,7 @@ function adicionarTarefa() {
         tarefas.push(tarefa)
         renderizarTarefas()
     }
+
     // limpa o input do usuário    
     inputTarefa.value = "";
 }
