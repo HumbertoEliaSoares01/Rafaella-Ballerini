@@ -1,5 +1,5 @@
 
-const galinhas = ["Dalvinha","Maria Rosa","Merilyn","Teresa","Flávia","Alvinha"];
+const galinhas = ["Dalvinha","Maria Rosa","Merilyn","Teresa","Filomena","Alvinha","Diana","Flávia",];
 let quantidade = galinhas.length;
 let texto = "";
 for (let i = 0; i < quantidade; i++){
