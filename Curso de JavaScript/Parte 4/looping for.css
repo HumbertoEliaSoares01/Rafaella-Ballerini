@@ -1,0 +1,20 @@
+html{
+    background-color: burlywood;
+}
+body{
+    margin: -15px 300px;
+    text-align: center; 
+    background-color: #fff; 
+    height: 480px;
+    width: 400px; 
+    padding: 5px,50px; 
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #DDB786;
+    opacity: .8;
+}
+hr{
+    width: 50%; 
+    border-color: red;
+}
+    
