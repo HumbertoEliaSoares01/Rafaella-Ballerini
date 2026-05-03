@@ -10,4 +10,4 @@ document.getElementById("demonstracao").innerHTML = texto;
         paragrafo.innerHTML = galinhas.length +" galinhas";
         document.body.appendChild(paragrafo);
         // alterando o css do parágrafo criado dinamicamente a partir do JavaScript
-        paragrafo.style="color: red; font-size: 2em;";  
+        paragrafo.style="color: red; font-size: 2em; margin-top: -10px;"  
