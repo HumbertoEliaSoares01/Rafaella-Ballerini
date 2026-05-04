@@ -13,7 +13,7 @@ function adicionarTarefa() {
     if (tarefa == ""){
         // mensagem de erro
         let mensagemErro = "Digite uma tarefa para adicionar à lista."    
-        mensagem.textContent = mensagemErro
+        mensagem.textContent = mensagemErro;
     } 
     else{
         // mensagem de tarefa adicionada com sucesso
@@ -31,19 +31,19 @@ function adicionarTarefa() {
 function renderizarTarefas(){
     // cria novo item (li) e insere da lista (ul)
     const listaTarefas = document.getElementById("listaTarefas");
-    listaTarefas.innerHTML = "";
-    
-    // for itens na lista
-    // 1. item inicial (iterador)
-    // 2. item final(condição)
-    // 3. se vai de 1 em 1 elemento, ou seja pula (frequência)
-    // for (iterador, condição, frequência)
+    listaTarefas.innerHTML = "";    
 
     let i = 0   // iterador
-
     for (i; i < tarefas.length; i++ ){
         let novaTarefa = document.createElement("li");
-        novaTarefa.textContent = tarefas[i]; 
+        novaTarefa.textContent = tarefas[i];
+        
+        let botaoRemover = document.createElement("button");
+        botaoRemover.className = "remover";
+        botaoRemover.textContent = "Remover"; 
+
+
+        novaTarefa.appendChild(botaoRemover);
         listaTarefas.appendChild(novaTarefa);    
     }
 
