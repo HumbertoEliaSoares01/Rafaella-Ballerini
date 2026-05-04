@@ -41,10 +41,13 @@ function renderizarTarefas(){
         let botaoRemover = document.createElement("button");
         botaoRemover.className = "remover";
         botaoRemover.textContent = "Remover"; 
-
+        botaoRemover.onclick = () => removerTarefa() =>
 
         novaTarefa.appendChild(botaoRemover);
         listaTarefas.appendChild(novaTarefa);    
     }
 
+}
+function removerTarefa(){
+    
 }
