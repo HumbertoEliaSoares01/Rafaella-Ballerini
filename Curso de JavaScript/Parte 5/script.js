@@ -13,14 +13,13 @@ function adicionarTarefa() {
     if (tarefa == ""){
         // mensagem de erro
         let mensagemErro = "Digite uma tarefa para adicionar à lista."    
-        mensagem.textContent = mensagemErro;
-        mensagem.style.color = "#A34743";       
+        mensagem.textContent = mensagemErro
     } 
     else{
         // mensagem de tarefa adicionada com sucesso
         let mensagemSucesso = "Tarefa adicionada com sucesso!"
         mensagem.textContent = mensagemSucesso;
-        mensagem.style.color = "#798252"
+
         tarefas.push(tarefa)
         renderizarTarefas()
     }
@@ -32,43 +31,20 @@ function adicionarTarefa() {
 function renderizarTarefas(){
     // cria novo item (li) e insere da lista (ul)
     const listaTarefas = document.getElementById("listaTarefas");
-    listaTarefas.innerHTML = "";    
+    listaTarefas.innerHTML = "";
+    
+    // for itens na lista
+    // 1. item inicial (iterador)
+    // 2. item final(condição)
+    // 3. se vai de 1 em 1 elemento, ou seja pula (frequência)
+    // for (iterador, condição, frequência)
 
-    for (let i = 0; i < tarefas.length; i++ ){
+    let i = 0   // iterador
+
+    for (i; i < tarefas.length; i++ ){
         let novaTarefa = document.createElement("li");
-        novaTarefa.textContent = tarefas[i];
-        
-        let botaoRemover = document.createElement("button");
-        botaoRemover.className = "remover";
-        botaoRemover.textContent = "Remover"; 
-        botaoRemover.onclick = () => removerTarefa(i);
-
-        let botaoEditar = document.createElement("button");
-        botaoEditar.className = "editar";
-        botaoEditar.textContent = "Editar"; 
-        botaoEditar.onclick = () => editarTarefa(i);
-
-        novaTarefa.appendChild(botaoEditar  );
-        novaTarefa.appendChild(botaoRemover);
+        novaTarefa.textContent = tarefas[i]; 
         listaTarefas.appendChild(novaTarefa);    
-
-}
-
-function removerTarefa(i) {
-    tarefas.splice(i, 1)
-    renderizarTarefas()
-}  
-function editarTarefa(i){
-    let tarefaEditada = prompt("Editar a tarefa");
-    if (tarefaEditada.trim() !== ""){
-        tarefas[i] = tarefaEditada;
-        renderizarTarefas();
     }
-}
-function limparLista(){
-    tarefas.length = 0;
-    renderizarTarefas();
-    const mensagem = document.getElementById("mensagem");
-    mensagem.textContent = "Lista de tarefas limpa com sucesso!";
- }
+
 }
