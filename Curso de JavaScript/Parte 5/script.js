@@ -42,6 +42,12 @@ function renderizarTarefas(){
         botaoRemover.textContent = "Remover"; 
         botaoRemover.onclick = () => removerTarefa(i);
 
+        let botaoEditar = document.createElement("button");
+        botaoEditar.className = "editar";
+        botaoEditar.textContent = "Editar"; 
+        botaoEditar.onclick = () => editarTarefa(i);
+
+        novaTarefa.appendChild(botaoEditar  );
         novaTarefa.appendChild(botaoRemover);
         listaTarefas.appendChild(novaTarefa);    
     }
