@@ -25,8 +25,8 @@ p {
     font-size: 1.1em;
 }
 button {
-    background-color: #798252;
-    color: #F4F0EA;
+    background-color: #ccbd10;
+    color: #60041A;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -34,10 +34,11 @@ button {
     font-size: 1em;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+//    border: 0.1px solid #60041A;
 }
 button:hover {
-    background-color: #CCD595;
-    color: #504e4d;
+    background-color: #ccbd10;
+    box-shadow: 0px 0px 10px #60041A;
 }
 ul {
     list-style: none;
@@ -88,7 +89,7 @@ button.remover:hover {
     box-shadow: 0px 0px 10px #60041A;
 }
 button.editar {
-    background-color: #331F19;
+    background-color: #798252;
     color: #F4F0EA;
     padding: 5px 5px;
     border: none;
@@ -100,8 +101,8 @@ button.editar {
     margin-left: 50px;
 }
 button.editar:hover {
-    background-color: #744d41;
-    box-shadow: 0px 0px 10px #744d41;
+    background-color: #798252;
+    box-shadow: 0px 0px 10px #798252;
 }
 
 .botao_lista {
