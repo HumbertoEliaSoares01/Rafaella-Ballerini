@@ -40,15 +40,15 @@ function renderizarTarefas(){
         let botaoRemover = document.createElement("button");
         botaoRemover.className = "remover";
         botaoRemover.textContent = "Remover"; 
-        botaoRemover.onclick = () => removerTarefa(i)
+        botaoRemover.onclick = () => removerTarefa(i);
 
         novaTarefa.appendChild(botaoRemover);
         listaTarefas.appendChild(novaTarefa);    
     }
 
 }
-function removerTarefa(i){
-    tarefas.slice(i,1);
-    renderizarTarefas(); 
-    
-}
+
+function removerTarefa(i) {
+    tarefas.splice(i, 1)
+    renderizarTarefas()
+}  
