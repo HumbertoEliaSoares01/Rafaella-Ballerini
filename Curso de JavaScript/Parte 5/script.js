@@ -14,12 +14,13 @@ function adicionarTarefa() {
         // mensagem de erro
         let mensagemErro = "Digite uma tarefa para adicionar à lista."    
         mensagem.textContent = mensagemErro;
+        mensagem.style.color = "#A34743";       
     } 
     else{
         // mensagem de tarefa adicionada com sucesso
         let mensagemSucesso = "Tarefa adicionada com sucesso!"
         mensagem.textContent = mensagemSucesso;
-
+        mensagem.style.color = "#798252"
         tarefas.push(tarefa)
         renderizarTarefas()
     }
@@ -58,3 +59,10 @@ function removerTarefa(i) {
     tarefas.splice(i, 1)
     renderizarTarefas()
 }  
+function editarTarefa(i){
+    let tarefaEditada = prompt("Editar a tarefa");
+    if (tarefaEditada.trim() !== ""){
+        tarefas[i] = tarefaEditada;
+        renderizarTarefas();
+    }
+}
