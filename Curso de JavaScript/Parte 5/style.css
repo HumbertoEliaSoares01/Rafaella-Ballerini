@@ -107,10 +107,13 @@ button.editar:hover {
 }
 
 .botao_lista {
+    color: #fff;
     background-color: #A34743;
+    margin-left: 50px;
 }
 
 .botao_lista:hover {
     background-color: #60041A;
-    color: #F4F0EA;
+    color: #CCBD10;
+    text-shadow: 1px solid #CCBD10;
 }

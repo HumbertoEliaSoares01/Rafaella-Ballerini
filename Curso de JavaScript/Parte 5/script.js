@@ -51,7 +51,6 @@ function renderizarTarefas(){
         novaTarefa.appendChild(botaoEditar  );
         novaTarefa.appendChild(botaoRemover);
         listaTarefas.appendChild(novaTarefa);    
-    }
 
 }
 
@@ -65,4 +64,11 @@ function editarTarefa(i){
         tarefas[i] = tarefaEditada;
         renderizarTarefas();
     }
+}
+function limparLista(){
+    tarefas.length = 0;
+    renderizarTarefas();
+    const mensagem = document.getElementById("mensagem");
+    mensagem.textContent = "Lista de tarefas limpa com sucesso!";
+ }
 }
