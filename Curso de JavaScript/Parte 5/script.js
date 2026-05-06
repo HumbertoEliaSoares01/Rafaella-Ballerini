@@ -13,15 +13,17 @@ function adicionarTarefa() {
         // mensagem de erro
         let mensagemErro = "Digite uma tarefa para adicionar à lista."    
         mensagem.textContent = mensagemErro
+        mensagem.style.color = "#60041A"
     } 
     else{
         // mensagem de tarefa adicionada com sucesso
         let mensagemSucesso = "Tarefa adicionada com sucesso!"
         mensagem.textContent = mensagemSucesso;
+        mensagem.style.color = ""
         tarefas.push(tarefa)
         renderizarTarefas()
     }
-    inputTarefa.value = "";
+    inputTarefa.value = "#528255";
 }
 
 function renderizarTarefas(){
