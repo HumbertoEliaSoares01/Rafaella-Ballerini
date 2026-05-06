@@ -1,29 +1,25 @@
 
 let tarefas = []
-// funcção adicionarTarefa acionada pelo evento clique no botão
+
 function adicionarTarefa() {
-    // recebe valor do input do usuário 
-    const inputTarefa = document.getElementById("inputTarefa")
-    let tarefa = inputTarefa.value.trim()
+    const inputTarefa = document.getElementById("inputTarefa");
+    let tarefa = inputTarefa.value.trim();
 
     const mensagem = document.getElementById("mensagem")
 
-    // Se o valor do input for vazio, mostra uma mensagem de erro
     if (tarefa == ""){
-        // mensagem de erro
         let mensagemErro = "Digite uma tarefa para adicionar à lista."    
         mensagem.textContent = mensagemErro
         mensagem.style.color = "#60041A"
     } 
     else{
-        // mensagem de tarefa adicionada com sucesso
         let mensagemSucesso = "Tarefa adicionada com sucesso!"
         mensagem.textContent = mensagemSucesso;
-        mensagem.style.color = ""
-        tarefas.push(tarefa)
-        renderizarTarefas()
-    }
-    inputTarefa.value = "#528255";
+        mensagem.style.color = "";
+        tarefas.push(tarefa);
+        renderizarTarefas();
+    }   
+    inputTarefa.value = ""
 }
 
 function renderizarTarefas(){
@@ -51,7 +47,7 @@ function renderizarTarefas(){
 }
 
 function removerTarefa(i){
-    tarefas.splice(i,1);
+    tarefas.splice(i, 1);
     renderizarTarefas();
 }
 
@@ -61,4 +57,11 @@ function editarTarefa(i){
         tarefas[i] = tarefaEditada;
         renderizarTarefas(); 
     }
+}
+
+function limparLista(){
+    tarefas.length = 0;
+    renderizarTarefas();
+    const mensagem = document.getElementById("mensagem");
+    mensagem.textContent = "Lista de tarefas limpa com sucesso";
 }
