@@ -1,21 +1,20 @@
-
 let tarefas = []
 
 function adicionarTarefa() {
-    const inputTarefa = document.getElementById("inputTarefa");
-    let tarefa = inputTarefa.value.trim();
+    const inputTarefa = document.getElementById("inputTarefa")
+    let tarefa = inputTarefa.value.trim()
 
     const mensagem = document.getElementById("mensagem")
 
     if (tarefa == ""){
-        let mensagemErro = "Digite uma tarefa para adicionar à lista."    
+        let mensagemErro = "Digite uma tarefa para adicionar à lista!"    
         mensagem.textContent = mensagemErro
         mensagem.style.color = "#60041A"
     } 
     else{
         let mensagemSucesso = "Tarefa adicionada com sucesso!"
         mensagem.textContent = mensagemSucesso;
-        mensagem.style.color = "";
+        mensagem.style.color = "greem";
         tarefas.push(tarefa);
         renderizarTarefas();
     }   
@@ -52,7 +51,7 @@ function removerTarefa(i){
 }
 
 function editarTarefa(i){
-    let tarefaEditada = prompt("Edite a tarefa");
+    let tarefaEditada = prompt("Edite a tarefa:");
     if (tarefaEditada.trim() !== ""){
         tarefas[i] = tarefaEditada;
         renderizarTarefas(); 
