@@ -80,3 +80,9 @@ iframe{
     text-align: 
     left; margin-left: 50px;"
 }
+.logo{
+    position: absolute;
+    width: 5%;
+    top: 5%;
+    left: 5%;
+}
