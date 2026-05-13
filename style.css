@@ -94,3 +94,8 @@ iframe{
     left: 15%;
     border-radius: 50%;
 }
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
