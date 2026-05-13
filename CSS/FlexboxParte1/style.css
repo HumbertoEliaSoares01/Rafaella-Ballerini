@@ -1,12 +1,19 @@
 * {
   margin: 0;
 }
-
+body{
+    margin: 5%;
+  }
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  /* flex-direction: column;  /* colunas */ 
+  flex-direction: row;  /* linhas */ 
+  justify-content: center;  /* center */
+  /* justify-content: flex-start; /* flex-start */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  align-items: center;  /* alinhamento vertical */
   flex-wrap: wrap;
   align-content: center;
   row-gap: 10px;
@@ -16,13 +23,17 @@
   background-color: #f9eac3;
   padding: 16px;
   height: 500px;
+
+  border-radius: 10px;
+  border: .1px solid #FF9999;
+  box-shadow: 0px 0px 10px #FF9999;
 }
 
 .bloco-1 {
   /* indiferente: */
   background-color: #c6d8f0;
-  height: 150px;
-  width: 150px;
+  height: 75px;
+  width: 75px;
   text-align: center;
   font-size: 40px;
   font-family: 'Courier New', Courier, monospace;
@@ -32,8 +43,8 @@
 .bloco-2 {
   /* indiferente: */
   background-color: #d8bfd8;
-  height: 150px;
-  width: 150px;
+  height: 75px;
+  width: 75px;
   text-align: center;
   font-size: 40px;
   font-family: 'Courier New', Courier, monospace;
@@ -43,8 +54,8 @@
 .bloco-3 {
   /* indiferente: */
   background-color: #ff9999;
-  height: 150px;
-  width: 150px;
+  height: 75px;
+  width: 75px;
   text-align: center;
   font-size: 40px;
   font-family: 'Courier New', Courier, monospace;
